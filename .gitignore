@@ -1,0 +1,6 @@
+#verilog simulation files
+*.vcd
+*.vvp
+*.fst
+*.log
+*.gtkwaveform
