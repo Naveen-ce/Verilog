@@ -1,0 +1,13 @@
+module full_subtractor (
+    input  A,
+    input  B,
+    input  Bin,     // Borrow in
+    output Diff,    // Difference
+    output Bout     // Borrow out
+);
+
+assign Diff = A ^ B ^ Bin;
+assign Bout = (~A & B) | (Bin & (~A | B));
+
+endmodule
+
