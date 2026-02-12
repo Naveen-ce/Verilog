@@ -1,0 +1,27 @@
+module sr_ff(
+input clk,rst,s,r,
+output reg q,
+output q_bar);
+always@(posedge clk or posedge rst)begin
+	if(rst)
+		q<=1'b0;
+	else begin
+case({s,r})
+2'b00:q<=q;
+2'b01:q<=1'b0;
+2'b10:q<=1'b1;
+2'b11:q<=1'bx;
+default:q<=1'b0;
+endcase
+end
+end
+assign q_bar=~q;
+endmodule
+
+module t_ff(
+input clk,rst,t,
+output q,q_bar);
+assign a=(t&~q);
+assign b=(t&q);
+sr_ff sr1(.s(a), .r(b), .clk(clk), .rst(rst), .q(q), .q_bar(q_bar));
+endmodule
