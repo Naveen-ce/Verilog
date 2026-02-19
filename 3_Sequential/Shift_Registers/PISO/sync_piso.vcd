@@ -1,0 +1,133 @@
+$date
+	Wed Feb 18 18:14:00 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_sync_piso $end
+$var wire 1 ! out $end
+$var reg 1 " clk $end
+$var reg 4 # in [3:0] $end
+$var reg 1 $ load $end
+$var reg 1 % rst $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 4 & in [3:0] $end
+$var wire 1 $ load $end
+$var wire 1 % rst $end
+$var reg 1 ! out $end
+$var reg 4 ' q [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 '
+b101 &
+1%
+0$
+b101 #
+0"
+0!
+$end
+#5
+1"
+#10
+0"
+0%
+#15
+1"
+#20
+0"
+1$
+b1011 #
+b1011 &
+#25
+1!
+b1011 '
+1"
+#30
+0"
+0$
+#35
+b101 '
+1"
+#40
+0"
+#45
+0!
+b10 '
+1"
+#50
+0"
+#55
+1!
+b1 '
+1"
+#60
+0"
+#65
+0!
+b0 '
+1"
+#70
+0"
+#75
+1"
+#80
+0"
+#85
+1"
+1%
+#90
+0"
+#95
+1"
+0%
+#100
+0"
+#105
+b1010 '
+1"
+1$
+b1010 #
+b1010 &
+#110
+0"
+#115
+1!
+b101 '
+1"
+0$
+#120
+0"
+#125
+0!
+b10 '
+1"
+#130
+0"
+#135
+1!
+b1 '
+1"
+#140
+0"
+#145
+0!
+b0 '
+1"
+#150
+0"
+#155
+1"
+#160
+0"
+#165
+1"
