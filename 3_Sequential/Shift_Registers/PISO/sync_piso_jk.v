@@ -23,7 +23,7 @@ output out);
 wire [3:0]q,a,b;
 assign a=~in;
 assign b=~q;
-jk_ff jk1(.clk(clk), .rst(rst), .j(load?in[0]:q[0]), .k(load?a[0]:b[0]), .q(q[0]));
+	jk_ff jk1(.clk(clk), .rst(rst), .j(load?in[0]:1'b0), .k(load?a[0]:1'b1), .q(q[0]));
 jk_ff jk2(.clk(clk), .rst(rst), .j(load?in[1]:q[0]), .k(load?a[1]:b[0]), .q(q[1]));
 jk_ff jk3(.clk(clk), .rst(rst), .j(load?in[2]:q[1]), .k(load?a[2]:b[1]), .q(q[2]));
 jk_ff jk4(.clk(clk), .rst(rst), .j(load?in[3]:q[2]), .k(load?a[3]:b[2]), .q(q[3]));
