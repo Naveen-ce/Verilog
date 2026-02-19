@@ -14,7 +14,7 @@ module piso(
 	input[3:0]in,
 output out);
 wire [3:0]q;
-d_ff d1(.clk(clk), .rst(rst), .d(load?in[0]:q[0]), .q(q[0]));
+	d_ff d1(.clk(clk), .rst(rst), .d(load?in[0]:1'b0), .q(q[0]));
 d_ff d2(.clk(clk), .rst(rst), .d(load?in[1]:q[0]), .q(q[1]));
 d_ff d3(.clk(clk), .rst(rst), .d(load?in[2]:q[1]), .q(q[2]));
 d_ff d4(.clk(clk), .rst(rst), .d(load?in[3]:q[2]), .q(q[3]));
