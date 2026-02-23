@@ -1,0 +1,80 @@
+$date
+	Thu Feb 19 17:38:01 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_reversebit $end
+$var wire 32 ! y [31:0] $end
+$var reg 32 " a [31:0] $end
+$scope module uut $end
+$var wire 32 # a [31:0] $end
+$var wire 32 $ y [31:0] $end
+$scope function reverse $end
+$var reg 32 % num [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+b10 $
+b10100 #
+b10100 "
+b10 !
+$end
+#10
+b1001 !
+b1001 $
+b0 %
+b1001 "
+b1001 #
+#20
+b0 !
+b0 $
+b0 "
+b0 #
+#30
+b111 !
+b111 $
+b0 %
+b111 "
+b111 #
+#40
+b1010001 !
+b1010001 $
+b0 %
+b10010 "
+b10010 #
+#50
+b1001000 !
+b1001000 $
+b0 %
+b11011 "
+b11011 #
+#60
+b111 !
+b111 $
+b0 %
+b111 "
+b111 #
+#70
+b1 !
+b1 $
+b0 %
+b1 "
+b1 #
+#80
+b1010001 !
+b1010001 $
+b0 %
+b10010 "
+b10010 #
+#100

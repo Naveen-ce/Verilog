@@ -1,0 +1,41 @@
+$date
+	Thu Feb 19 18:29:52 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_apb $end
+$var wire 32 ! y [31:0] $end
+$var reg 32 " a [31:0] $end
+$var reg 32 # b [31:0] $end
+$scope module uut $end
+$var wire 32 $ a [31:0] $end
+$var wire 32 % b [31:0] $end
+$var wire 32 & y [31:0] $end
+$scope function out $end
+$var reg 32 ' x [31:0] $end
+$var reg 32 ( z [31:0] $end
+$var integer 32 ) i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b110 )
+b101 (
+b100 '
+b10000000000 &
+b101 %
+b100 $
+b101 #
+b100 "
+b10000000000 !
+$end
+#50

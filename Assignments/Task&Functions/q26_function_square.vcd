@@ -1,0 +1,71 @@
+$date
+	Thu Feb 19 11:11:20 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_square $end
+$var wire 32 ! out [31:0] $end
+$var reg 32 " a [31:0] $end
+$var integer 32 # i [31:0] $end
+$scope module uut $end
+$var wire 32 $ a [31:0] $end
+$var wire 32 % out [31:0] $end
+$scope function square $end
+$var reg 32 & x [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1100 &
+b10010000 %
+b1100 $
+b0 #
+b1100 "
+b10010000 !
+$end
+#10
+b100100 !
+b100100 %
+b110 &
+b110 "
+b110 $
+b1 #
+#20
+b100 !
+b100 %
+b10 &
+b10 "
+b10 $
+b10 #
+#30
+b11001 !
+b11001 %
+b101 &
+b101 "
+b101 $
+b11 #
+#40
+b1111001 !
+b1111001 %
+b1011 &
+b1011 "
+b1011 $
+b100 #
+#50
+b100000000 !
+b100000000 %
+b10000 &
+b10000 "
+b10000 $
+b101 #
+#60
+b110 #

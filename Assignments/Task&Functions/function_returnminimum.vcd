@@ -1,0 +1,87 @@
+$date
+	Fri Feb 20 10:42:43 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_returnminimum $end
+$var wire 8 ! y [7:0] $end
+$var parameter 32 " N $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$scope module uut $end
+$var wire 8 % a [7:0] $end
+$var wire 8 & b [7:0] $end
+$var wire 8 ' y [7:0] $end
+$var parameter 32 ( N $end
+$scope function compare $end
+$var reg 8 ) x [7:0] $end
+$var reg 8 * y [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 (
+b1000 "
+$end
+#0
+$dumpvars
+b0 *
+b1 )
+b0 '
+b0 &
+b1 %
+b0 $
+b1 #
+b0 !
+$end
+#10
+b101111 !
+b101111 '
+b10010000 *
+b101111 )
+b10010000 $
+b10010000 &
+b101111 #
+b101111 %
+#20
+b110000 !
+b110000 '
+b10101111 *
+b110000 )
+b10101111 $
+b10101111 &
+b110000 #
+b110000 %
+#30
+b10100000 !
+b10100000 '
+b10100000 *
+b10101010 )
+b10100000 $
+b10100000 &
+b10101010 #
+b10101010 %
+#40
+b1101001 !
+b1101001 '
+b11111011 *
+b1101001 )
+b11111011 $
+b11111011 &
+b1101001 #
+b1101001 %
+#50
+b10110110 !
+b10110110 '
+b10110110 *
+b11100100 )
+b10110110 $
+b10110110 &
+b11100100 #
+b11100100 %

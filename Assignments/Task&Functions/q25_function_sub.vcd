@@ -1,0 +1,162 @@
+$date
+	Thu Feb 19 10:26:14 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_q25 $end
+$var wire 5 ! diff [4:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$var integer 32 $ i [31:0] $end
+$var integer 32 % j [31:0] $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 5 ( diff [4:0] $end
+$scope function subtractor $end
+$var reg 4 ) x [3:0] $end
+$var reg 4 * y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b11111 !
+b11111 (
+b1 *
+b1 #
+b1 '
+b1 %
+#20
+b11110 !
+b11110 (
+b10 *
+b10 #
+b10 '
+b10 %
+#30
+b11101 !
+b11101 (
+b11 *
+b11 #
+b11 '
+b11 %
+#40
+b1 !
+b1 (
+b0 *
+b1 )
+b0 #
+b0 '
+b1 "
+b1 &
+b1 $
+b0 %
+#50
+b0 !
+b0 (
+b1 *
+b1 #
+b1 '
+b1 %
+#60
+b11111 !
+b11111 (
+b10 *
+b10 #
+b10 '
+b10 %
+#70
+b11110 !
+b11110 (
+b11 *
+b11 #
+b11 '
+b11 %
+#80
+b10 !
+b10 (
+b0 *
+b10 )
+b0 #
+b0 '
+b10 "
+b10 &
+b10 $
+b0 %
+#90
+b1 !
+b1 (
+b1 *
+b1 #
+b1 '
+b1 %
+#100
+b0 !
+b0 (
+b10 *
+b10 #
+b10 '
+b10 %
+#110
+b11111 !
+b11111 (
+b11 *
+b11 #
+b11 '
+b11 %
+#120
+b11 !
+b11 (
+b0 *
+b11 )
+b0 #
+b0 '
+b11 "
+b11 &
+b11 $
+b0 %
+#130
+b10 !
+b10 (
+b1 *
+b1 #
+b1 '
+b1 %
+#140
+b1 !
+b1 (
+b10 *
+b10 #
+b10 '
+b10 %
+#150
+b0 !
+b0 (
+b11 *
+b11 #
+b11 '
+b11 %
+#160
+b100 $
+b100 %

@@ -1,0 +1,59 @@
+$date
+	Fri Feb 20 10:53:31 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_no_of_1 $end
+$var wire 6 ! y [5:0] $end
+$var parameter 32 " N $end
+$var reg 8 # a [7:0] $end
+$scope module uut $end
+$var wire 8 $ a [7:0] $end
+$var wire 6 % y [5:0] $end
+$var parameter 32 & N $end
+$scope function ones $end
+$var reg 8 ' x [7:0] $end
+$var integer 32 ( i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 &
+b1000 "
+$end
+#0
+$dumpvars
+b1000 (
+b10011110 '
+b101 %
+b10011110 $
+b10011110 #
+b101 !
+$end
+#10
+b10 !
+b10 %
+b1000 (
+b110000 '
+b110000 #
+b110000 $
+#20
+b101 !
+b101 %
+b1000 (
+b1111100 '
+b1111100 #
+b1111100 $
+#30
+b110 !
+b110 %
+b1000 (
+b10011111 '
+b10011111 #
+b10011111 $

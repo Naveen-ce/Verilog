@@ -1,0 +1,52 @@
+$date
+	Fri Feb 20 10:54:29 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_trailingzeroes $end
+$var wire 6 ! y [5:0] $end
+$var parameter 32 " N $end
+$var reg 8 # a [7:0] $end
+$scope module uut $end
+$var wire 8 $ a [7:0] $end
+$var wire 6 % y [5:0] $end
+$var parameter 32 & N $end
+$scope function zeroes $end
+$var reg 8 ' x [7:0] $end
+$var integer 32 ( i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 &
+b1000 "
+$end
+#0
+$dumpvars
+b1001 (
+b10011110 '
+b1 %
+b10011110 $
+b10011110 #
+b1 !
+$end
+#10
+b100 !
+b100 %
+b1001 (
+b110000 '
+b110000 #
+b110000 $
+#20
+b10 !
+b10 %
+b1001 (
+b1111100 '
+b1111100 #
+b1111100 $

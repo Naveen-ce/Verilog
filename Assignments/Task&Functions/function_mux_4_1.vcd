@@ -1,0 +1,76 @@
+$date
+	Thu Feb 19 15:52:45 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_mux_4_1 $end
+$var wire 1 ! y $end
+$var reg 4 " i [3:0] $end
+$var reg 1 # s0 $end
+$var reg 1 $ s1 $end
+$scope module uut $end
+$var wire 4 % i [3:0] $end
+$var wire 1 # s0 $end
+$var wire 1 $ s1 $end
+$var wire 1 ! y $end
+$scope function out $end
+$var reg 1 & x0 $end
+$var reg 1 ' x1 $end
+$var reg 4 ( z [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b110 (
+0'
+0&
+b110 %
+0$
+0#
+b110 "
+0!
+$end
+#10
+1!
+1'
+1$
+#20
+0'
+1&
+0$
+1#
+#30
+0!
+1'
+1$
+#40
+b1010 (
+0'
+0&
+b1010 "
+b1010 %
+0$
+0#
+#50
+1!
+1'
+1$
+#60
+0!
+0'
+1&
+0$
+1#
+#70
+1!
+1'
+1$

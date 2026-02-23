@@ -1,0 +1,50 @@
+$date
+	Thu Feb 19 15:16:43 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_function_checkpower $end
+$var wire 1 ! y $end
+$var reg 32 " a [31:0] $end
+$scope module uut $end
+$var wire 32 # a [31:0] $end
+$var wire 1 ! y $end
+$scope function power $end
+$var reg 32 $ x [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10 $
+b10 #
+b10 "
+1!
+$end
+#10
+0!
+b1010 $
+b1010 "
+b1010 #
+#20
+1!
+b10000000 $
+b10000000 "
+b10000000 #
+#30
+0!
+b1100101 $
+b1100101 "
+b1100101 #
+#40
+b100000000 $
+b100000000 "
+b100000000 #
