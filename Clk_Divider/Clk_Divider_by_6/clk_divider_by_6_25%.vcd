@@ -1,0 +1,132 @@
+$date
+	Tue Mar  3 11:02:12 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_clk_divider_by_6 $end
+$var wire 1 ! f_by_6 $end
+$var reg 1 " clk $end
+$var reg 1 # rst $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 ! f_by_6 $end
+$var wire 1 # rst $end
+$var reg 3 $ count [2:0] $end
+$var reg 1 % r_neg $end
+$var reg 1 & r_pos $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0&
+0%
+b0 $
+1#
+0"
+0!
+$end
+#5
+1!
+1&
+b1 $
+0#
+1"
+#10
+1%
+0"
+#15
+b10 $
+0&
+1"
+#20
+0!
+0%
+0"
+#25
+b11 $
+1"
+#30
+0"
+#35
+b100 $
+1"
+#40
+0"
+#45
+b101 $
+1"
+#50
+0"
+#55
+b110 $
+1"
+#60
+0"
+#65
+1!
+1&
+b1 $
+1"
+#70
+1%
+0"
+#75
+b10 $
+0&
+1"
+#80
+0!
+0%
+0"
+#85
+b11 $
+1"
+#90
+0"
+#95
+b100 $
+1"
+#100
+0"
+#105
+b101 $
+1"
+#110
+0"
+#115
+b110 $
+1"
+#120
+0"
+#125
+1!
+1&
+b1 $
+1"
+#130
+1%
+0"
+#135
+b10 $
+0&
+1"
+#140
+0!
+0%
+0"
+#145
+b11 $
+1"
+#150
+0"
+#155
+b100 $
+1"
