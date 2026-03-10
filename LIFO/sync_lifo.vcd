@@ -1,0 +1,197 @@
+$date
+	Fri Mar  6 19:10:50 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_lifo $end
+$var wire 1 ! full $end
+$var wire 1 " empty $end
+$var wire 8 # data_out [7:0] $end
+$var parameter 32 $ depth $end
+$var parameter 32 % width $end
+$var reg 1 & clk $end
+$var reg 8 ' data_in [7:0] $end
+$var reg 1 ( pop $end
+$var reg 1 ) push $end
+$var reg 1 * rst $end
+$scope module uut $end
+$var wire 1 & clk $end
+$var wire 8 + data_in [7:0] $end
+$var wire 1 ( pop $end
+$var wire 1 ) push $end
+$var wire 1 * rst $end
+$var wire 1 ! full $end
+$var wire 1 " empty $end
+$var parameter 32 , depth $end
+$var parameter 32 - width $end
+$var reg 8 . data_out [7:0] $end
+$var reg 4 / stack_ptr [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 -
+b1000 ,
+b1000 %
+b1000 $
+$end
+#0
+$dumpvars
+b0 /
+b0 .
+b10001010 +
+1*
+1)
+0(
+b10001010 '
+0&
+b0 #
+1"
+0!
+$end
+#5
+1&
+#10
+0&
+0*
+#15
+0"
+b1 /
+1&
+#20
+0&
+b10101000 '
+b10101000 +
+#25
+b10 /
+1&
+#30
+0&
+b10101001 '
+b10101001 +
+#35
+b11 /
+1&
+#40
+0&
+b10101010 '
+b10101010 +
+#45
+b100 /
+1&
+#50
+0&
+b10101011 '
+b10101011 +
+#55
+b101 /
+1&
+#60
+0&
+b10101100 '
+b10101100 +
+#65
+b110 /
+1&
+#70
+0&
+b10101101 '
+b10101101 +
+#75
+b111 /
+1&
+#80
+0&
+b10101110 '
+b10101110 +
+#85
+1!
+b1000 /
+1&
+#90
+0&
+b10101111 '
+b10101111 +
+#95
+1&
+#100
+0&
+1(
+0)
+b10001010 '
+b10001010 +
+#105
+0!
+b111 /
+b10101110 #
+b10101110 .
+1&
+#110
+0&
+b10011010 '
+b10011010 +
+#115
+b110 /
+b10101101 #
+b10101101 .
+1&
+#120
+0&
+b10101010 '
+b10101010 +
+#125
+b101 /
+b10101100 #
+b10101100 .
+1&
+#130
+0&
+b10111010 '
+b10111010 +
+#135
+b100 /
+b10101011 #
+b10101011 .
+1&
+#140
+0&
+b11001010 '
+b11001010 +
+#145
+b11 /
+b10101010 #
+b10101010 .
+1&
+#150
+0&
+b11011010 '
+b11011010 +
+#155
+b10 /
+b10101001 #
+b10101001 .
+1&
+#160
+0&
+b11101010 '
+b11101010 +
+#165
+b1 /
+b10101000 #
+b10101000 .
+1&
+#170
+0&
+#175
+1"
+b0 /
+b10001010 #
+b10001010 .
+1&
+#180
+0&
