@@ -1,0 +1,1367 @@
+$date
+	Mon Mar 16 19:43:49 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_spi $end
+$var wire 8 ! slave_out [7:0] $end
+$var wire 1 " slave_done $end
+$var wire 8 # master_out [7:0] $end
+$var wire 1 $ master_done $end
+$var parameter 32 % clk_frequency $end
+$var parameter 32 & spi_clk_freq $end
+$var reg 1 ' clk $end
+$var reg 8 ( master_data_in [7:0] $end
+$var reg 1 ) rst $end
+$var reg 8 * slave_data_in [7:0] $end
+$var reg 2 + target_slave [1:0] $end
+$var reg 1 , tx_start $end
+$scope module uut $end
+$var wire 1 ' clk $end
+$var wire 8 - master_data_in [7:0] $end
+$var wire 1 $ master_done $end
+$var wire 8 . master_out [7:0] $end
+$var wire 1 ) rst $end
+$var wire 8 / slave_data_in [7:0] $end
+$var wire 2 0 target_slave [1:0] $end
+$var wire 1 , tx_start $end
+$var wire 8 1 slave_out_4 [7:0] $end
+$var wire 8 2 slave_out_3 [7:0] $end
+$var wire 8 3 slave_out_2 [7:0] $end
+$var wire 8 4 slave_out_1 [7:0] $end
+$var wire 1 5 slave_done_4 $end
+$var wire 1 6 slave_done_3 $end
+$var wire 1 7 slave_done_2 $end
+$var wire 1 8 slave_done_1 $end
+$var wire 1 9 sclk $end
+$var wire 1 : mosi $end
+$var wire 1 ; miso4 $end
+$var wire 1 < miso3 $end
+$var wire 1 = miso2 $end
+$var wire 1 > miso1 $end
+$var wire 1 ? miso $end
+$var wire 8 @ master_out_n [7:0] $end
+$var wire 1 A master_done_n $end
+$var wire 1 B master_active $end
+$var wire 1 C cs4 $end
+$var wire 1 D cs3 $end
+$var wire 1 E cs2 $end
+$var wire 1 F cs1 $end
+$var parameter 32 G clk_frequency $end
+$var parameter 32 H spi_clk_freq $end
+$var reg 1 " slave_done $end
+$var reg 8 I slave_out [7:0] $end
+$scope module d1 $end
+$var wire 1 ' clk $end
+$var wire 1 ) rst $end
+$var wire 2 J slave_select [1:0] $end
+$var wire 1 B enable $end
+$var reg 1 F cs1 $end
+$var reg 1 E cs2 $end
+$var reg 1 D cs3 $end
+$var reg 1 C cs4 $end
+$upscope $end
+$scope module m1 $end
+$var wire 1 ' clk $end
+$var wire 8 K master_data_in [7:0] $end
+$var wire 1 ? miso $end
+$var wire 1 L misoi $end
+$var wire 1 ) rst $end
+$var wire 1 9 sclk_out $end
+$var wire 1 M sclk_rising_edge $end
+$var wire 1 , start_tx $end
+$var wire 1 N sclk $end
+$var wire 1 : mosi $end
+$var parameter 32 O clk_frequency $end
+$var parameter 2 P done $end
+$var parameter 2 Q idle $end
+$var parameter 32 R spi_clk_freq $end
+$var parameter 2 S start $end
+$var parameter 2 T transfer $end
+$var reg 3 U bit_count [2:0] $end
+$var reg 1 A master_done $end
+$var reg 8 V master_out [7:0] $end
+$var reg 8 W master_shift_reg [7:0] $end
+$var reg 1 X sclk_prev $end
+$var reg 2 Y state [1:0] $end
+$var reg 1 B transmitting $end
+$scope module c1 $end
+$var wire 1 ' clk $end
+$var wire 1 ) rst $end
+$var parameter 32 Z clk_frequency $end
+$var parameter 32 [ counter_width $end
+$var parameter 32 \ div_factor $end
+$var parameter 33 ] max_count $end
+$var parameter 32 ^ spi_clk_freq $end
+$var reg 3 _ count [2:0] $end
+$var reg 1 N sclk $end
+$upscope $end
+$upscope $end
+$scope module s1 $end
+$var wire 1 ' clk $end
+$var wire 1 F cs $end
+$var wire 1 : mosi $end
+$var wire 1 ) rst $end
+$var wire 1 9 sclk $end
+$var wire 8 ` slave_data_in [7:0] $end
+$var wire 1 a sclk_rising_edge $end
+$var wire 1 > miso $end
+$var parameter 2 b done $end
+$var parameter 2 c idle $end
+$var parameter 2 d start $end
+$var parameter 2 e transfer $end
+$var reg 3 f bit_count [2:0] $end
+$var reg 3 g sclk_sync [2:0] $end
+$var reg 1 8 slave_done $end
+$var reg 8 h slave_out [7:0] $end
+$var reg 8 i slave_shift_reg [7:0] $end
+$var reg 2 j state [1:0] $end
+$upscope $end
+$scope module s2 $end
+$var wire 1 ' clk $end
+$var wire 1 E cs $end
+$var wire 1 : mosi $end
+$var wire 1 ) rst $end
+$var wire 1 9 sclk $end
+$var wire 8 k slave_data_in [7:0] $end
+$var wire 1 l sclk_rising_edge $end
+$var wire 1 = miso $end
+$var parameter 2 m done $end
+$var parameter 2 n idle $end
+$var parameter 2 o start $end
+$var parameter 2 p transfer $end
+$var reg 3 q bit_count [2:0] $end
+$var reg 3 r sclk_sync [2:0] $end
+$var reg 1 7 slave_done $end
+$var reg 8 s slave_out [7:0] $end
+$var reg 8 t slave_shift_reg [7:0] $end
+$var reg 2 u state [1:0] $end
+$upscope $end
+$scope module s3 $end
+$var wire 1 ' clk $end
+$var wire 1 D cs $end
+$var wire 1 : mosi $end
+$var wire 1 ) rst $end
+$var wire 1 9 sclk $end
+$var wire 8 v slave_data_in [7:0] $end
+$var wire 1 w sclk_rising_edge $end
+$var wire 1 < miso $end
+$var parameter 2 x done $end
+$var parameter 2 y idle $end
+$var parameter 2 z start $end
+$var parameter 2 { transfer $end
+$var reg 3 | bit_count [2:0] $end
+$var reg 3 } sclk_sync [2:0] $end
+$var reg 1 6 slave_done $end
+$var reg 8 ~ slave_out [7:0] $end
+$var reg 8 !" slave_shift_reg [7:0] $end
+$var reg 2 "" state [1:0] $end
+$upscope $end
+$scope module s4 $end
+$var wire 1 ' clk $end
+$var wire 1 C cs $end
+$var wire 1 : mosi $end
+$var wire 1 ) rst $end
+$var wire 1 9 sclk $end
+$var wire 8 #" slave_data_in [7:0] $end
+$var wire 1 $" sclk_rising_edge $end
+$var wire 1 ; miso $end
+$var parameter 2 %" done $end
+$var parameter 2 &" idle $end
+$var parameter 2 '" start $end
+$var parameter 2 (" transfer $end
+$var reg 3 )" bit_count [2:0] $end
+$var reg 3 *" sclk_sync [2:0] $end
+$var reg 1 5 slave_done $end
+$var reg 8 +" slave_out [7:0] $end
+$var reg 8 ," slave_shift_reg [7:0] $end
+$var reg 2 -" state [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 ("
+b1 '"
+b0 &"
+b11 %"
+b10 {
+b1 z
+b0 y
+b11 x
+b10 p
+b1 o
+b0 n
+b11 m
+b10 e
+b1 d
+b0 c
+b11 b
+b11110100001001000000 ^
+b100 ]
+b1010 \
+b11 [
+b100110001001011010000000 Z
+b10 T
+b1 S
+b11110100001001000000 R
+b0 Q
+b11 P
+b100110001001011010000000 O
+b11110100001001000000 H
+b100110001001011010000000 G
+b11110100001001000000 &
+b100110001001011010000000 %
+$end
+#0
+$dumpvars
+b0 -"
+bx ,"
+bx +"
+b0 *"
+bx )"
+0$"
+b10001111 #"
+b0 ""
+bx !"
+bx ~
+b0 }
+bx |
+0w
+b10001111 v
+b0 u
+bx t
+bx s
+b0 r
+bx q
+0l
+b10001111 k
+b0 j
+bx i
+bx h
+b0 g
+bx f
+0a
+b10001111 `
+b0 _
+b0 Y
+0X
+bx W
+bx V
+bx U
+0N
+0M
+zL
+b10101010 K
+b0 J
+bx I
+1F
+1E
+1D
+1C
+0B
+0A
+bx @
+0?
+z>
+z=
+z<
+z;
+x:
+09
+08
+07
+06
+05
+bx 4
+bx 3
+bx 2
+bx 1
+b0 0
+b10001111 /
+bx .
+b10101010 -
+0,
+b0 +
+b10001111 *
+1)
+b10101010 (
+0'
+0$
+bx #
+0"
+bx !
+$end
+#5
+1'
+#10
+0'
+0)
+#15
+b1 _
+1'
+#20
+0'
+1,
+#25
+b1 Y
+1B
+b10 _
+1'
+#30
+0'
+0,
+#35
+x>
+x?
+1:
+0F
+b11 _
+b10 Y
+b0 U
+b10101010 W
+1'
+#40
+0'
+#45
+b100 _
+b1 j
+0F
+1'
+#50
+0'
+#55
+1?
+1M
+1>
+0F
+b10 j
+b0 f
+b10001111 i
+b0 _
+19
+1N
+1'
+#60
+0'
+#65
+0M
+0:
+b1 U
+b1010101 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#70
+0'
+#75
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#80
+0'
+#85
+0?
+0>
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b1 f
+b11110 i
+b111 g
+0F
+1'
+#90
+0'
+#95
+0F
+b100 _
+1'
+#100
+0'
+#105
+b0 _
+09
+0N
+0F
+1'
+#110
+0'
+#115
+0F
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#120
+0'
+#125
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+0F
+1'
+#130
+0'
+#135
+0F
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#140
+0'
+#145
+b100 _
+0F
+1'
+#150
+0'
+#155
+1M
+0F
+b0 _
+19
+1N
+1'
+#160
+0'
+#165
+0M
+1:
+b10 U
+b10101010 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#170
+0'
+#175
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#180
+0'
+#185
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b10 f
+b111101 i
+b111 g
+0F
+1'
+#190
+0'
+#195
+0F
+b100 _
+1'
+#200
+0'
+#205
+b0 _
+09
+0N
+0F
+1'
+#210
+0'
+#215
+0F
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#220
+0'
+#225
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+0F
+1'
+#230
+0'
+#235
+0F
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#240
+0'
+#245
+b100 _
+0F
+1'
+#250
+0'
+#255
+1M
+0F
+b0 _
+19
+1N
+1'
+#260
+0'
+#265
+0M
+0:
+b11 U
+b1010100 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#270
+0'
+#275
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#280
+0'
+#285
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b11 f
+b1111010 i
+b111 g
+0F
+1'
+#290
+0'
+#295
+0F
+b100 _
+1'
+#300
+0'
+#305
+b0 _
+09
+0N
+0F
+1'
+#310
+0'
+#315
+0F
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#320
+0'
+#325
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+0F
+1'
+#330
+0'
+#335
+0F
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#340
+0'
+#345
+b100 _
+0F
+1'
+#350
+0'
+#355
+1M
+0F
+b0 _
+19
+1N
+1'
+#360
+0'
+#365
+0M
+1:
+b100 U
+b10101000 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#370
+0'
+#375
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#380
+0'
+#385
+1?
+1>
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b100 f
+b11110101 i
+b111 g
+0F
+1'
+#390
+0'
+#395
+0F
+b100 _
+1'
+#400
+0'
+#405
+b0 _
+09
+0N
+0F
+1'
+#410
+0'
+#415
+0F
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#420
+0'
+#425
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+0F
+1'
+#430
+0'
+#435
+0F
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#440
+0'
+#445
+b100 _
+0F
+1'
+#450
+0'
+#455
+1M
+0F
+b0 _
+19
+1N
+1'
+#460
+0'
+#465
+0M
+0:
+b101 U
+b1010001 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#470
+0'
+#475
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#480
+0'
+#485
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b101 f
+b11101010 i
+b111 g
+0F
+1'
+#490
+0'
+#495
+0F
+b100 _
+1'
+#500
+0'
+#505
+b0 _
+09
+0N
+0F
+1'
+#510
+0'
+#515
+0F
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#520
+0'
+#525
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+0F
+1'
+#530
+0'
+#535
+0F
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#540
+0'
+#545
+b100 _
+0F
+1'
+#550
+0'
+#555
+1M
+0F
+b0 _
+19
+1N
+1'
+#560
+0'
+#565
+0M
+1:
+b110 U
+b10100011 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#570
+0'
+#575
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#580
+0'
+#585
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b110 f
+b11010101 i
+b111 g
+0F
+1'
+#590
+0'
+#595
+0F
+b100 _
+1'
+#600
+0'
+#605
+b0 _
+09
+0N
+0F
+1'
+#610
+0'
+#615
+0F
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#620
+0'
+#625
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+0F
+1'
+#630
+0'
+#635
+0F
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#640
+0'
+#645
+b100 _
+0F
+1'
+#650
+0'
+#655
+1M
+0F
+b0 _
+19
+1N
+1'
+#660
+0'
+#665
+0M
+0:
+b111 U
+b1000111 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#670
+0'
+#675
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#680
+0'
+#685
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b11 j
+b111 f
+b10101010 i
+b111 g
+0F
+1'
+#690
+0'
+#695
+1"
+b10101010 !
+b10101010 I
+0F
+b10101010 4
+b10101010 h
+18
+b100 _
+1'
+#700
+0'
+#705
+b0 _
+09
+0N
+0F
+1'
+#710
+0'
+#715
+0F
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#720
+0'
+#725
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+0F
+1'
+#730
+0'
+#735
+0F
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#740
+0'
+#745
+b100 _
+0F
+1'
+#750
+0'
+#755
+1M
+0F
+b0 _
+19
+1N
+1'
+#760
+0'
+#765
+0M
+1:
+b11 Y
+b0 U
+b10001111 W
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+0F
+1'
+#770
+0'
+#775
+1a
+1l
+1w
+1$"
+0F
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+b0 Y
+b10001111 #
+b10001111 .
+b10001111 @
+b10001111 V
+1$
+1A
+0B
+1'
+#780
+0'
+#785
+0$"
+0w
+0l
+0a
+z>
+0?
+0$
+0A
+b11 _
+b111 *"
+b111 }
+b111 r
+b111 g
+1F
+1'
+#790
+0'
+#795
+b0 j
+b100 _
+1'
+#800
+0'
+#805
+b0 _
+09
+0N
+0"
+08
+1'
+#810
+0'
+#815
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#820
+0'
+#825
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+1'
+#830
+0'
+#835
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#840
+0'
+#845
+b100 _
+1'
+#850
+0'
+#855
+1M
+b0 _
+19
+1N
+1'
+#860
+0'
+#865
+0M
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+1'
+#870
+0'
+#875
+1a
+1l
+1w
+1$"
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#880
+0'
+#885
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b111 g
+1'
+#890
+0'
+#895
+b100 _
+1'
+#900
+0'
+#905
+b0 _
+09
+0N
+1'
+#910
+0'
+#915
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#920
+0'
+#925
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+1'
+#930
+0'
+#935
+b0 g
+b0 r
+b0 }
+b0 *"
+b11 _
+1'
+#940
+0'
+#945
+b100 _
+1'
+#950
+0'
+#955
+1M
+b0 _
+19
+1N
+1'
+#960
+0'
+#965
+0M
+1X
+b1 _
+b1 *"
+b1 }
+b1 r
+b1 g
+1'
+#970
+0'
+#975
+1a
+1l
+1w
+1$"
+b11 g
+b11 r
+b11 }
+b11 *"
+b10 _
+1'
+#980
+0'
+#985
+0$"
+0w
+0l
+0a
+b11 _
+b111 *"
+b111 }
+b111 r
+b111 g
+1'
+#990
+0'
+#995
+b100 _
+1'
+#1000
+0'
+#1005
+b0 _
+09
+0N
+1'
+#1010
+0'
+#1015
+b110 g
+b110 r
+b110 }
+b110 *"
+b1 _
+0X
+1'
+#1020
+0'
+#1025
+b10 _
+b100 *"
+b100 }
+b100 r
+b100 g
+1'
+#1030
+0'
