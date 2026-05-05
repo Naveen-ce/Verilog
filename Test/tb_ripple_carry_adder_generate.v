@@ -1,13 +1,10 @@
 module tb_ripple_adder;
-reg [3:0]a,b;
+parameter N=4;
+reg [N-1:0]a,b;
 reg cin;
-wire [3:0]sum;
+wire [N-1:0]sum;
 wire cout;
-<<<<<<< HEAD
-bit_4_adder dut(.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
-=======
-ripple_carry_adder dut(.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
->>>>>>> 0eeee36483d3bc5123ddaf13ccc6ed06b6a6fcb7
+ripple_carry_adder #(.N(N)) dut(.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 initial begin
 a=4'b0000; b=4'b0000; cin=0;
 #10 a=4'b0001; b=4'b0000; cin=0;
@@ -17,6 +14,8 @@ a=4'b0000; b=4'b0000; cin=0;
  #10 a=4'b0100; b=4'b0110; cin=0; 
  #10 a=4'b0101; b=4'b0111; cin=1; 
  #10 a=4'b1001; b=4'b0010; cin=0; 
+ #10 a=4'b1011; b=4'b1001; cin=0;
+ #10 a=4'b1001; b=4'b1101; cin=0;
  #10 a=4'b0001; b=4'b0101; cin=0; 
  #20 $finish;
  end
@@ -26,3 +25,4 @@ $dumpfile("tb_ripple_adder.vcd");
 $dumpvars(0,tb_ripple_adder);
 end
 endmodule
+

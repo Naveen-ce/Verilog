@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 module bit_4_adder(
+=======
+module full_adder(
+>>>>>>> 0eeee36483d3bc5123ddaf13ccc6ed06b6a6fcb7
 input a,b,cin,
 output sum,carry);
 assign sum=a^b^cin;
