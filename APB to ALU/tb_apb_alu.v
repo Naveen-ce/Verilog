@@ -29,6 +29,33 @@ pclk=0;presetn=1;transfer=0;read_write=0;write_paddr=0;write_data=0;
       write_data=data;
       @(posedge pclk);
       @(posedge pclk);
+      @(posedge pclk);
+      
+      #2
+      if(write_paddr==0)
+      $display("Operand A=%0d",data);
+      
+      if(write_paddr==4)
+      $display("Operand B=%0d",data);
+      
+      if(write_paddr==8) begin
+      
+      case(data)
+      
+      8'd0:$display("===   Addition   ===");
+      8'd1:$display("===   Subtraction   ===");
+      8'd2:$display("===   Multiplication   ===");
+      8'd3:$display("===   Division   ==="); 
+      8'd4:$display("===   AND   ===");
+      8'd5:$display("===   OR   ===");
+      8'd6:$display("===   NAND   ===");
+      8'd7:$display("===   NOR   ===");
+      8'd8:$display("===   XOR   ===");
+      8'd9:$display("===   XNOR  ===");
+      endcase
+      end
+     
+      $display("");
     end
 endtask
 
@@ -41,8 +68,11 @@ task apb_read;
     read_paddr=addr;
     @(posedge pclk);
     @(posedge pclk);
+    @(posedge pclk);
     #1;
-    $display("READ ADDR=%0d DATA=%0d PSLVERR=%b",addr,read_data_out,slave_error);
+
+    $display("READ ADDR=%0d | DATA=%0d |  PSLVERR=%b",addr,read_data_out,slave_error);
+     $display("");
   end
 endtask
 
@@ -50,30 +80,60 @@ initial begin
   $dumpfile("dump.vcd");
   $dumpvars(0,tb);
   
-  rst();
+    
+  $display("================================================================================================");
+  $display("                                          APB to ALU                                                 ");
+  $display("================================================================================================");
   
+  
+  rst();
+
+
   apb_write(0,10);
   apb_write(4,5);
   apb_write(8,0);
   apb_read(16);
+   $display("-----------------------------------");
+  $display("");
+  
   
   apb_write(8,1);
   apb_read(16);
+   $display("-----------------------------------");
+  $display("");
+  
+
 
   apb_write(8,2);
   apb_read(16);
+  $display("-----------------------------------");
+  $display("");
+  
 
   apb_write(8,3);
   apb_read(16);
+  $display("-----------------------------------");
+  $display("");
+  
 
   apb_write(8,8);
   apb_read(16);
+   $display("-----------------------------------");
+  $display("");
+  
 
-  #50 $finish;
+  
+  repeat(5) begin
+  apb_write(0,$urandom_range(0,15));
+  apb_write(4,$urandom_range(0,15));
+  apb_write(8,$urandom_range(0,9));
+  apb_read(16);
+  $display("-----------------------------------");
+  $display("");
+  
   end
-
-initial begin
-  $monitor("T=%0t |  PRESETN=%b |  PENABLE=%b |  WRITE_PADDR=%0d |  WRITE_DATA=%0d |  READ_PADDR=%0d |  READ_DATA=%0d |  PSLVERR=%b",$time,presetn,penable,write_paddr,write_data,read_paddr,read_data_out,slave_error);
+  
+  $finish;
   end
 
 endmodule
