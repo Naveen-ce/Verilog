@@ -1,4 +1,7 @@
-//Memory 
+// ==========================================
+// Memory Module
+// ==========================================
+
 module memory #(parameter width=8,depth=8)
 (input wclk,rclk,wrt_en,rd_en,
 input[$clog2(depth):0]wptr,rptr,
@@ -24,7 +27,10 @@ endmodule
 
 
 
-//Synchronizer
+// ==========================================
+// Synchronizer Module
+// ==========================================
+
 module ptr_sync #(parameter width=4)
 (input clk,rst,
 	input [width-1:0] ptr,
@@ -44,7 +50,11 @@ endmodule
 
 
 
-//Write logic
+// ==========================================
+// Write Logic Module
+// ==========================================
+
+
 module wr_ptr #(parameter width=4)
 (input wclk,wrst,wrt_en,
 	input[width-1:0] rptr_sync,
@@ -57,7 +67,6 @@ wire t_full;
 
 assign wptr_nxt=wptr+(wrt_en && !wfull);
 assign wptr_gray_nxt=wptr_nxt^(wptr_nxt>>1);
-
 
 
 
@@ -79,7 +88,12 @@ end
 assign t_full=(wptr_gray_nxt =={~rptr_sync[width-1:width-2],rptr_sync[width-3:0]});
 endmodule
 
-//Read logic
+
+
+// ==========================================
+// Read Logic Module
+// ==========================================
+
 
  module rd_ptr #(parameter width=4)
 (input rclk,rrst,rd_en,
@@ -93,9 +107,6 @@ wire t_empty;
 
 assign rptr_nxt=rptr+(rd_en && !rempty);
 assign rptr_gray_nxt=rptr_nxt^(rptr_nxt>>1);
-
-
-
 
 
 always@(posedge rclk or posedge rrst)begin
@@ -117,7 +128,11 @@ endmodule
 
 
 
-//Top module
+// ==========================================
+// Top Module
+// ==========================================
+
+
 module async_fifo #(parameter width=8,depth=8)
 (input wclk,
 input wrst,
@@ -137,7 +152,7 @@ localparam ptr=$clog2(depth)+1;
 wire [ptr-1:0] r_sync,w_sync;
 wire [ptr-1:0] r_gray,w_gray;
 wire [ptr-1:0] wptr,rptr;
-wire [width-1:0]d_out;
+wire [width-1:0] d_out;
 wire tfull,tempty;
 
 //Write Logic

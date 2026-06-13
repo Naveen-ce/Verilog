@@ -24,7 +24,7 @@ always@(posedge wclk or posedge wrst)begin
 
 	else begin
 		wptr<=wptr_nxt;
-		wptr_gray<=wptr_gray_next;
+		wptr_gray<=wptr_gray_nxt;
                 wfull<=t_full;
 	end
 end

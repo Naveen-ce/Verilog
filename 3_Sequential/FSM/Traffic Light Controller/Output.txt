@@ -1,0 +1,558 @@
+#=====================================================================================================================#
+#                                               TRAFFIC LIGHT CONTROLLER                                              #
+#=====================================================================================================================#
+
+#----> All signals are Red <----#
+
+| CLK =0 | RST =1 |  NS1 =10000 | NS2 =10000 | EW1 =10000 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =10
+
+#----> All signals are Red <----#
+
+| CLK =1 | RST =1 |  NS1 =10000 | NS2 =10000 | EW1 =10000 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10000 | EW1 =10000 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =00111 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> NORTH TO SOUTH <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =01000 | EW1 =10010 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =00111 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> West to East <----#
+
+| CLK =1 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+| CLK =0 | RST =0 |  NS1 =10010 | NS2 =10000 | EW1 =01000 | EW2 =10000 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =01
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =00111 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> East to West <----#
+
+| CLK =1 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =10000 | NS2 =10010 | EW1 =10000 | EW2 =01000 | NS1_P =10 | NS2_P =10 | NS3_P =01 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =00111 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> SOUTH TO NORTH <-----#
+
+| CLK =1 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =0 |  NS1 =01000 | NS2 =10000 | EW1 =10000 | EW2 =10010 | NS1_P =10 | NS2_P =01 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =01 | EW3_P =10 | EW4_P =10
+
+#----> All signals are Red <----#
+
+| CLK =1 | RST =1 |  NS1 =10000 | NS2 =10000 | EW1 =10000 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =10
+| CLK =0 | RST =1 |  NS1 =10000 | NS2 =10000 | EW1 =10000 | EW2 =10000 | NS1_P =10 | NS2_P =10 | NS3_P =10 | NS4_P =10 | EW1_P =10 | EW2_P =10 | EW3_P =10 | EW4_P =10
+Simulation complete via $finish(1) at time 1105 NS + 0
